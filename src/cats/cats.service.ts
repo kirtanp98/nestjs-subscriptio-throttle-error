@@ -1,8 +1,11 @@
 import { Injectable } from '@nestjs/common';
+import { Cat } from './entities/cat.entity';
 
 @Injectable()
 export class CatsService {
   getCatName() {
-    return 'Tom';
+    const cat = new Cat();
+    cat.name = 'Tom';
+    return cat;
   }
 }

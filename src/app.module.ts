@@ -27,4 +27,4 @@ import { GqlThrottlerGuard } from './GraphQLGaurd';
     },
   ],
 })
-export class AppModule { }
+export class AppModule {}
